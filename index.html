@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aesculapius | Infusion Dose Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Aesculapius</h1>
+    <p>Inotropic & Antiarrhythmic Infusion Calculator</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <label>Patient Weight (kg)</label>
+      <input type="number" id="weight" placeholder="e.g. 70" />
+
+      <label>Drug</label>
+      <select id="drug">
+        <option value="">Select drug</option>
+        <option value="norepinephrine">Norepinephrine</option>
+        <option value="dobutamine">Dobutamine</option>
+        <option value="dopamine">Dopamine</option>
+        <option value="amiodarone">Amiodarone</option>
+      </select>
+
+      <label>Dose (mcg/kg/min)</label>
+      <input type="number" id="dose" placeholder="e.g. 0.5" step="0.01" />
+
+      <button onclick="calculate()">Calculate Infusion</button>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <div class="disclaimer">
+      ⚠️ Educational use only. Always verify calculations and local protocols before administration.
+    </div>
+  </main>
+
+  <footer>
+    © Aesculapius | Clinical Decision Support
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
