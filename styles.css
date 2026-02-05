@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+header {
+  background: #0f766e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+main {
+  padding: 20px;
+  max-width: 520px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #0f766e;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+.result {
+  margin-top: 20px;
+  background: #ecfeff;
+  border-left: 5px solid #0f766e;
+  padding: 16px;
+  border-radius: 8px;
+  display: none;
+}
+
+.result h3 {
+  margin-top: 0;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
